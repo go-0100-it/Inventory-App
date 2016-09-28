@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ab6925</color>
+    <color name="colorPrimaryDark">#1e201e</color>
+    <color name="colorAccent">#ffb940</color>
+    <color name="listButtonColor">@color/colorPrimaryDark</color>
+    <color name="listButtonTextColor">#ffffff</color>
+    <color name="listBackgroundColor">#b3ffe4c7</color>
+    <color name="sideNavBarCenterColor">#baa084</color>
+    <color name="sideNavBarEndColor">@color/colorPrimaryDark</color>
+    <color name="sideNavBarStartColor">@color/colorPrimary</color>
+    <color name="shadowColor">#38afaeae</color>
+    <color name="hint_text_color">#e9d5b9</color>
+    <color name="productDetailTitleColor">@color/colorPrimary</color>
+    <color name="productDetailTextColor">@color/colorPrimaryDark</color>
+</resources>
