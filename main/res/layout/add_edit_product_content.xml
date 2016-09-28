@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_activity.EditProductActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding"
+            android:textSize="@dimen/app_text_size_medium"
+            android:inputType="text"
+            android:hint="@string/product_name_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/product_name_edit_text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding"
+            android:textSize="@dimen/app_text_size_small"
+            android:inputType="number"
+            android:hint="@string/product_number_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/product_number_edit_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/app_standard_padding"
+            android:paddingRight="@dimen/app_standard_padding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_standard_padding"
+                android:textSize="@dimen/app_text_size_small"
+                android:enabled="false"
+                android:textColor="@color/colorPrimary"
+                android:hint="@string/image_button_hint"
+                android:textColorHint="@color/hint_text_color"
+                android:id="@+id/product_image_path"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <ImageButton
+                android:id="@+id/imageBtn"
+                android:elevation="@dimen/elevation_three"
+                android:padding="@dimen/app_standard_padding_x_small"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
+                android:gravity="end"
+                android:textColor="@color/listButtonTextColor"
+                android:textSize="@dimen/app_text_size_x_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_pic"
+                android:background="@drawable/my_button"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding"
+            android:textSize="@dimen/app_text_size_small"
+            android:inputType="text"
+            android:hint="@string/product_description_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/product_description_edit_text" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/product_category_array"
+            android:paddingStart="@dimen/app_standard_padding_small"
+            android:paddingLeft="@dimen/app_standard_padding_small"
+            android:paddingTop="@dimen/app_standard_padding"
+            android:spinnerMode="dropdown"
+            android:id="@+id/product_category_edit_text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding"
+            android:textSize="@dimen/app_text_size_small"
+            android:inputType="numberDecimal"
+            android:hint="@string/product_price_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/price_edit_text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding"
+            android:textSize="@dimen/app_text_size_small"
+            android:inputType="numberDecimal"
+            android:hint="@string/product_quantity_on_hand_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:id="@+id/quantity_on_hand_edit_text" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/product_type_array"
+            android:paddingStart="@dimen/app_standard_padding_small"
+            android:paddingLeft="@dimen/app_standard_padding_small"
+            android:paddingTop="@dimen/app_standard_padding"
+            android:spinnerMode="dropdown"
+            android:id="@+id/type_edit_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

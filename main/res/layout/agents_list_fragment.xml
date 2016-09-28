@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/app_standard_padding_medium"
+    tools:context=".product_activity.ProductListFragment"
+    tools:showIn="@layout/main_list_app_bar">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:clickable="true"
+        android:longClickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp">
+
+    </ListView>
+
+    <ScrollView
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/the_agent_icon"
+                android:layout_width="@dimen/empty_view_image_width"
+                android:layout_height="@dimen/empty_view_image_height"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="@drawable/agents_icon" />
+
+            <TextView
+                android:id="@+id/empty_view_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/emptyViewTextColor"
+                android:textSize="@dimen/app_text_size_normal"
+                android:gravity="center"
+                android:padding="@dimen/app_standard_padding"
+                tools:text="NOTHING TO SEE HERE!" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

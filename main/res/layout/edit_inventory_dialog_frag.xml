@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_activity.EditProductActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/app_standard_margin_medium"
+        android:paddingBottom="@dimen/app_standard_padding"
+        android:paddingStart="@dimen/app_standard_padding_x_large"
+        android:paddingLeft="@dimen/app_standard_padding_x_large"
+        android:paddingRight="@dimen/app_standard_padding_x_large"
+        android:paddingEnd="@dimen/app_standard_padding_x_large"
+        android:textSize="@dimen/app_text_size_small"
+        android:id="@+id/message_text"
+        android:text="@string/update_inventory_dialog_message"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/app_standard_padding_xxx_large"
+            android:paddingEnd="@dimen/app_standard_padding"
+            android:paddingRight="@dimen/app_standard_padding"
+            android:paddingStart="@dimen/app_standard_padding"
+            android:paddingLeft="@dimen/app_standard_padding"
+            android:inputType="numberSigned"
+            android:textSize="@dimen/app_text_size_x_large"
+            android:ems="4"
+            android:id="@+id/amount_edit_text"
+            android:hint="@string/amount_hint"
+            android:textColorHint="@color/hint_text_color"
+            android:gravity="center_vertical|end" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="@dimen/image_button_dialog_width"
+                android:layout_height="@dimen/image_button_dialog_height"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:id="@+id/up_button"
+                android:background="@android:color/transparent"
+                android:src="@drawable/up_button" />
+
+            <ImageButton
+                android:layout_width="@dimen/image_button_dialog_width"
+                android:layout_height="@dimen/image_button_dialog_height"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:id="@+id/down_button"
+                android:background="@android:color/transparent"
+                android:src="@drawable/down_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/app_standard_padding"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/app_text_size_normal"
+            android:textAllCaps="false"
+            android:text="@android:string/cancel"
+            android:id="@+id/cancel_button"
+            android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/app_text_size_normal"
+            android:textAllCaps="false"
+            android:text="@string/enter_adjustment"
+            android:id="@+id/update_button"
+            android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

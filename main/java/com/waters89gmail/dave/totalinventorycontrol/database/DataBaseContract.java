@@ -2,13 +2,7 @@ package com.waters89gmail.dave.totalinventorycontrol.database;
 
 import android.provider.BaseColumns;
 
-/**
- * Created by WatersD on 8/9/2016.
- */
 public class DataBaseContract {
-
-    // Logcat tag
-    public static final String LOG_TAG = ("MY_LOG");
 
     public DataBaseContract() {}
 
@@ -28,7 +22,6 @@ public class DataBaseContract {
         public static final String QTY_ON_HAND = "qty_on_hand";
         public static final String TYPE = "type";
         public static final String IMAGE_SOURCE = "image";
-
     }
 
     /* Inner class that defines the Transactions Table contents */
@@ -47,7 +40,6 @@ public class DataBaseContract {
         public static final String PAYMENT_STATUS = "payment_status";
         public static final String DELIVERY_RECEIPT_STATUS = "delivery_receipt_status";
         public static final String TRANS_METHOD = "transaction_method";
-
     }
 
     /* Inner class that defines the Business Agents Table contents */
@@ -67,7 +59,6 @@ public class DataBaseContract {
         public static final String PREFERRED_CONTACT = "preferred_contact";
         public static final String WEBSITE = "website";
         public static final String COMPANY_NAME = "company_name";
-
     }
 
     /* Inner class that defines the Ordering Details Table contents */
@@ -86,7 +77,6 @@ public class DataBaseContract {
         public static final String PAYMENT_TYPE_1 = "payment_type_1";
         public static final String PAYMENT_TYPE_2 = "payment_type_2";
         public static final String ORDER_METHOD = "order_method";
-
     }
 
     /* Inner class that defines the Sales Key Table contents */

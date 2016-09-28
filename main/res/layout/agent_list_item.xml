@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/app_standard_padding_xx_small"
+    android:paddingBottom="@dimen/app_standard_padding_xxx_small"
+    android:paddingRight="@dimen/app_standard_padding_x_small"
+    android:paddingLeft="@dimen/app_standard_padding_x_small"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="@dimen/elevation_two"
+        android:background="@color/listBackgroundColor"
+        android:padding="@dimen/app_standard_padding_x_small"
+        android:layout_marginTop="@dimen/app_standard_margin_x_small"
+        android:layout_marginBottom="@dimen/app_standard_margin_xx_small"
+        android:layout_marginRight="@dimen/app_standard_margin_small"
+        android:layout_marginLeft="@dimen/app_standard_margin_small">
+
+        <LinearLayout
+            android:id="@+id/product_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/app_standard_padding_small"
+            android:paddingRight="@dimen/app_standard_padding_small"
+            android:paddingStart="@dimen/app_standard_padding_small"
+            android:paddingEnd="@dimen/app_standard_padding_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/anchor_layout"
+            android:layout_toStartOf="@+id/anchor_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/agent_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/app_standard_padding_small"
+                android:textSize="@dimen/app_text_size_normal"
+                android:textColor="@color/productDetailTextColor"
+                tools:text="John Stewart"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_text_size_xx_small"
+                android:textColor="@color/productDetailTitleColor"
+                tools:text="Some Company" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anchor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/web_site_layout"
+            android:layout_width="@dimen/image_button_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/app_standard_padding_xx_small"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/web_site_btn"
+                android:elevation="@dimen/elevation_three"
+                android:padding="@dimen/app_standard_padding_x_small"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/listButtonTextColor"
+                android:textSize="@dimen/app_text_size_x_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/web_icon"
+                android:background="@drawable/my_button"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/app_standard_padding_xxx_small"
+                android:layout_below="@+id/web_site_btn"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/app_text_size_xx_small"
+                android:textColor="@color/productDetailTitleColor"
+                android:text="@string/image_button_website" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_layout"
+            android:layout_width="@dimen/image_button_layout_width"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_standard_padding_xx_small"
+            android:layout_gravity="center_vertical"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/call_btn"
+                android:elevation="@dimen/elevation_three"
+                android:padding="@dimen/app_standard_padding_x_small"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/listButtonTextColor"
+                android:textSize="@dimen/app_text_size_x_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/phone_icon"
+                android:background="@drawable/my_button"/>
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/app_standard_padding_xxx_small"
+                android:layout_below="@+id/call_btn"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/app_text_size_xx_small"
+                android:textColor="@color/productDetailTitleColor"
+                android:text="@string/image_button_phone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_layout"
+            android:layout_width="@dimen/image_button_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/app_standard_padding_xx_small"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/email_btn"
+                android:elevation="@dimen/elevation_three"
+                android:padding="@dimen/app_standard_padding_x_small"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/listButtonTextColor"
+                android:textSize="@dimen/app_text_size_x_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/email_icon"
+                android:background="@drawable/my_button"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/app_standard_padding_xxx_small"
+                android:layout_below="@+id/email_btn"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/app_text_size_xx_small"
+                android:textColor="@color/productDetailTitleColor"
+                android:text="@string/image_button_email" />
+
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
